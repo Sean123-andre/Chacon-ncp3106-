@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================
+       META
+       ========================================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- =========================================================
+       TITLE
+       ========================================================= -->
+  <title>Elegant Portfolio | About Me</title>
+
+
+  <!-- =========================================================
+       EXTERNAL CSS (Bootstrap + Font Awesome for same look/logic)
+       ========================================================= -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- =========================================================
+       PAGE CONTAINER
+       ========================================================= -->
+  <div class="page-container">
+
+    <!-- =======================================================
+         NAVBAR (Sticky, Glassmorphism Style)
+         ======================================================= -->
+    <nav class="navbar navbar-expand-lg mb-4 sticky-top" aria-label="Main navigation" style="background-color: #2c2c2c; border-radius: 12px; padding: 10px 16px;">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand fw-bold" href="#" aria-label="Sean's Portfolio" style="color:#f8f9fa;">
+          Sean's Portfolio
+        </a>
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#hero" style="color:#f8f9fa;">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" style="color:#f8f9fa;">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education" style="color:#f8f9fa;">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#seminars" style="color:#f8f9fa;">Seminars & Trainings</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio" style="color:#f8f9fa;">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" style="color:#f8f9fa;">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =======================================================
+         HERO (same look)
+         ======================================================= -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="hero">
+        <!-- Left side -->
+        <div class="hero-left">
+          <h1 id="hero-title" class="long-shadow">SEAN CHACON</h1>
+          <p class="hero-sub mb-3">ASPIRING COMPUTER ENGINEER</p>
+
+          <!-- Social icons -->
+          <div class="social-row" role="navigation" aria-label="Social links">
+            <a href="https://www.facebook.com/seanandrebenedict.chacon.1" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/_seandokkk/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@shiprono90" target="_blank" rel="noopener" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="hero-right">
+          <!-- CHANGE THIS IMAGE if you want -->
+          <img
+            src="https://github.com/Sean123-andre/image/blob/main/d79fffd2-d85b-4803-8f23-61f0b8c3b250.png?raw=true"
+            alt="Professional portrait of Sean"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+ <!-- =======================================================
+     ABOUT (same order, same styling feel)
+     ======================================================= -->
+<section id="about" aria-labelledby="about-heading">
+  <!-- Two-column grid (image | content) -->
+  <div class="about-grid">
+    
+    <!-- LEFT: Image -->
+    <div>
+      <img
+        id="aboutImage"
+        class="about-image"
+        src="https://github.com/Sean123-andre/image/blob/main/Black%20and%20White%20Modern%20Web%20Design%20Presentation%20(13).png?raw=true"
+        alt="About Me Photo"
+      />
+    </div>
+
+    <!-- RIGHT: Text -->
+    <div>
+      <h2 id="about-heading" class="about-title">ABOUT ME</h2>
+
+      <!-- small underline bar for same design cue -->
+      <div class="bg-light mb-4" style="height:2px; width:80px;"></div>
+
+      <p class="about-lead mb-4">
+        Hello! I'm Sean, I am a Computer Engineering student who is still learning
+        and exploring different areas of technology. I like working on simple coding
+        projects and understanding how computers and electronics work. My goal is to
+        keep improving my skills and gain more experience that will help me in my future
+        career.
+
+      </p>
+
+      <!-- Add margin-top here (mt-4 for Bootstrap or style="margin-top:2rem;") -->
+      <h3 class="about-title" style="font-size:2rem; margin-top:5rem; margin-bottom:1.2rem;">SKILLS</h3>
+
+      <!-- core competencies (same content) -->
+      <div class="mini-features">
+        
+        <div class="mini-feature">
+          <div class="icon-min">
+            <i class="fas fa-microchip fa-2x text-light"></i>
+          </div>
+          <div>
+            <h6>Embedded Systems</h6>
+            <small>Arduino &amp; IoT</small>
+          </div>
+        </div>
+
+        <div class="mini-feature">
+          <div class="icon-min">
+            <i class="fas fa-code fa-2x text-light"></i>
+          </div>
+          <div>
+            <h6>Programming</h6>
+            <small>C++, Python, JavaScript</small>
+          </div>
+        </div>
+
+        <div class="mini-feature">
+          <div class="icon-min">
+            <i class="fas fa-globe fa-2x text-light"></i>
+          </div>
+          <div>
+            <h6>Networks</h6>
+            <small>Cisco Packet Tracer</small>
+          </div>
+        </div>
+
+      </div> <!-- /mini-features -->
+    </div>
+  </div> <!-- /about-grid -->
+</section>
+
+    <!-- =======================================================
+         EDUCATION (same content / style)
+         ======================================================= -->
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading" class="about-title text-center mb-4">EDUCATIONAL BACKGROUND</h2>
+
+      <!-- simple responsive 3-column grid -->
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <article class="card-dark education-mobile">
+            <img
+              src="https://github.com/Sean123-andre/image/blob/main/Black%20and%20White%20Modern%20Web%20Design%20Presentation%20(9).png?raw=true"
+              alt="University Campus"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bachelor of Science in Computer Engineering</h5>
+              <p class="card-text">
+                Currently pursuing my degree with focus on embedded systems, software development, and digital electronics.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <small class="text-muted">2025 - Present</small>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <article class="card-dark education-mobile">
+            <img
+              src="https://github.com/Sean123-andre/image/blob/main/Black%20and%20White%20Modern%20Web%20Design%20Presentation%20(8).png?raw=true"
+              alt="High School"
+            />
+            <div class="card-body">
+              <h5 class="card-title">High School / Senior High School</h5>
+              <p class="card-text">
+                Completed senior high school with STEM track, focusing on Science, Technology, Engineering, and Mathematics.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <small class="text-muted">2016 - 2023</small>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <article class="card-dark education-mobile">
+            <img
+              src="https://github.com/Sean123-andre/image/blob/main/Black%20and%20White%20Modern%20Web%20Design%20Presentation%20(10).png?raw=true"
+              alt="Elementary School"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Elementary Education</h5>
+              <p class="card-text">
+                Completed elementary education with honors, developing strong foundation in mathematics and science.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <small class="text-muted">2010 - 2016</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+<!-- =======================================================
+     SEMINARS & TRAININGS (with clickable images)
+     ======================================================= -->
+<section id="seminars" aria-labelledby="seminars-heading">
+  <h2 id="seminars-heading" class="about-title text-center mb-4">SEMINARS &amp; TRAININGS</h2>
+
+  <div class="row g-3">
+    <!-- Card A -->
+    <div class="col-12 col-md-6">
+      <article class="h-100 text-center" style="background:none; border:none; box-shadow:none;">
+        <!-- Clickable thumbnail -->
+        <img src="https://github.com/Sean123-andre/image/blob/main/arduino3.png?raw=true"
+             alt="Arduino Workshop"
+             class="mb-3 seminar-img"
+             style="cursor:pointer; border-radius:12px;"
+             data-bs-toggle="modal"
+             data-bs-target="#seminar1Modal">
+
+        <div class="card-body" style="background:none; border:none;">
+          <h5 class="card-title">
+            <i class="fas fa-microchip me-2"></i>
+            Arduino Programming Workshop
+          </h5>
+          <p class="card-text">
+            Hands-on training in microcontroller programming and IoT development. Focus on sensors, and serial communication.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Card B -->
+    <div class="col-12 col-md-6">
+      <article class="h-100 text-center" style="background:none; border:none; box-shadow:none;">
+        <!-- Clickable thumbnail -->
+        <img src="https://github.com/Sean123-andre/image/blob/main/figma.png?raw=true"
+             alt="Web Dev Bootcamp"
+             class="mb-3 seminar-img"
+             style="cursor:pointer; border-radius:12px;"
+             data-bs-toggle="modal"
+             data-bs-target="#seminar2Modal">
+
+        <div class="card-body" style="background:none; border:none;">
+          <h5 class="card-title">
+            <i class="fas fa-code me-2"></i>
+            Figma 101 Workshop
+          </h5>
+          <p class="card-text">
+            Comprehensive training in Figma fundamentals, UI/UX design principles, and creating interactive prototypes with real-world projects.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =======================================================
+     SEMINAR MODALS
+     ======================================================= -->
+
+<!-- Modal: Seminar 1 -->
+<div class="modal fade" id="seminar1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:#141414; border:1px solid #2b2b2b;">
+      <div class="modal-header" style="border-bottom:1px solid #2b2b2b;">
+        <h5 class="modal-title">Arduino Programming Workshop</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/486509827_1098873702252722_4134732117996399940_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=ZQKKN8dDLcoQ7kNvwFxhJAo&_nc_oc=AdnX8ZfU8dKRQI4CRdaBEAr4Oh0Eh9Zd8w_5WygX3XMnJJkq5h7qtQLqEyUmAi5wN70&_nc_zt=23&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=iPyB7aRX_H9DUp_9zfLlsA&oh=00_AfUPmsEuV7AFFuLf0-qv6kxvLs5yD7V0jE8nnxDvJwqXCg&oe=68A760CC"
+             alt="Arduino Workshop Full"
+             class="img-fluid">
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Seminar 2 -->
+<div class="modal fade" id="seminar2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:#141414; border:1px solid #2b2b2b;">
+      <div class="modal-header" style="border-bottom:1px solid #2b2b2b;">
+        <h5 class="modal-title">Figma 101 Workshop</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/494304515_1129360692537356_7591086464690415300_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SgzZybbP2vYQ7kNvwGK0IS0&_nc_oc=Adl4z0EFlrWoiMTAWNhJ9hvFDku7fkdINlFcfecybZVpWFVDstaNeLkL3WT8Y1uEbv4&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=Zj3-sjT7bVQvMdu6PVSQVQ&oh=00_AfW2vm4sgYulEugB0l-wbdTIF9RUnOE-K_LeuqHPsY21FA&oe=68A79260"
+             alt="Web Dev Bootcamp Full"
+             class="img-fluid">
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+    <!-- =======================================================
+         PORTFOLIO (same projects + modals)
+         ======================================================= -->
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading" class="about-title text-center mb-4">MY PROJECTS</h2>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-12 col-md-4">
+          <div class="project-card position-relative overflow-hidden rounded-4">
+            <img src="https://github.com/Sean123-andre/image/blob/main/highrorlow3.png?raw=true" alt="Ten Seconds Game" class="w-100 project-img blurred-img" />
+            <div class="centered-title-overlay">
+              High or Low
+            </div>
+            <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#project1Modal">
+              Learn more
+            </button>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-12 col-md-4">
+          <div class="project-card position-relative overflow-hidden rounded-4">
+            <img src="https://github.com/Sean123-andre/image/blob/main/jackenpoy2.png?raw=true" alt="Jack 'En Poy" class="w-100 project-img blurred-img" />
+            <div class="centered-title-overlay">
+              JackEnPoy
+            </div>
+            <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#project2Modal">
+              Learn more
+            </button>
+          </div>
+          <!-- Fourth project centered below -->
+          <div class="mt-4"></div>
+          <div class="project-card position-relative overflow-hidden rounded-4 mx-auto" style="max-width:340px;">
+            <img src="https://github.com/Sean123-andre/image/blob/main/colorgame2.png?raw=true" alt="Your Fourth Project" class="w-100 project-img blurred-img" />
+            <div class="centered-title-overlay">
+              Color Game
+            </div>
+            <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#project4Modal">
+              Learn more
+            </button>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-12 col-md-4">
+          <div class="project-card position-relative overflow-hidden rounded-4">
+            <img src="https://github.com/Sean123-andre/image/blob/main/inbetween2.png?raw=true" alt="Your Third Project" class="w-100 project-img blurred-img" />
+            <div class="centered-title-overlay">
+              InBetween
+            </div>
+            <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#project3Modal">
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 1 Modal -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background:#141414; color:#f1f1f1;">
+          <div class="modal-header border-0">
+            <h3 class="modal-title fw-bold" style="font-size:2rem;">High or Low</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body row align-items-center py-4">
+            <div class="col-md-5 text-center mb-3 mb-md-0">
+              <div style="background:#232b36; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.18); padding:16px;">
+                <img src="https://github.com/Sean123-andre/image/blob/main/highorlowgame.png?raw=true" alt="High or Low" class="img-fluid rounded-3" style="border:2px solid #00bcd4;">
+              </div>
+            </div>
+            <div class="col-md-7 d-flex align-items-center" style="min-height:220px;">
+              <p style="color:#f8f9fa; font-size:1.35rem; line-height:1.6; margin-bottom:0;">
+                The High or Low game is a fast-paced card game where player will guess if the next card will be higher or lower. Simple, addictive, and fun!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background:#141414; color:#f1f1f1;">
+          <div class="modal-header border-0">
+            <h3 class="modal-title fw-bold" style="font-size:2rem;">Jack 'En Poy</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body row align-items-center py-4">
+            <div class="col-md-5 text-center mb-3 mb-md-0">
+              <div style="background:#232b36; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.18); padding:16px;">
+                <img src="https://github.com/Sean123-andre/image/blob/main/jackenpoygame.png?raw=true" alt="Jack 'En Poy" class="img-fluid rounded-3" style="border:2px solid #00bcd4;">
+              </div>
+            </div>
+            <div class="col-md-7 d-flex align-items-center" style="min-height:220px;">
+              <p style="color:#f8f9fa; font-size:1.35rem; line-height:1.6; margin-bottom:0;">
+                Jack 'En Poy is a digital version of the classic rock-paper-scissors game with a retro pixel art style. But the challenge is to fight against a computer!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background:#141414; color:#f1f1f1;">
+          <div class="modal-header border-0">
+            <h3 class="modal-title fw-bold" style="font-size:2rem;">InBetween</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body row align-items-center py-4">
+            <div class="col-md-5 text-center mb-3 mb-md-0">
+              <div style="background:#232b36; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.18); padding:16px;">
+                <img src="https://github.com/Sean123-andre/image/blob/main/inbetweengame.png?raw=true" alt="InBetween" class="img-fluid rounded-3" style="border:2px solid #00bcd4;">
+              </div>
+            </div>
+            <div class="col-md-7 d-flex align-items-center" style="min-height:220px;">
+              <p style="color:#f8f9fa; font-size:1.35rem; line-height:1.6; margin-bottom:0;">
+                InBetween is a card game where you guess if the next card will fall between two shown cards. A game of chance and strategy!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 Modal -->
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background:#141414; color:#f1f1f1;">
+          <div class="modal-header border-0">
+            <h3 class="modal-title fw-bold" style="font-size:2rem;">Color Game</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body row align-items-center py-4">
+            <div class="col-md-5 text-center mb-3 mb-md-0">
+              <div style="background:#232b36; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.18); padding:16px;">
+                <img src="https://github.com/Sean123-andre/image/blob/main/colorgamegame.png?raw=true" alt="Color Game" class="img-fluid rounded-3" style="border:2px solid #00bcd4;">
+              </div>
+            </div>
+            <div class="col-md-7 d-flex align-items-center" style="min-height:220px;">
+              <p style="color:#f8f9fa; font-size:1.35rem; line-height:1.6; margin-bottom:0;">
+                This Color Game is a fun and interactive project because players guess or match colors. It’s designed to test your luck in choosing color.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =======================================================
+         CONTACT (same fields)
+         ======================================================= -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="text-center mb-4">CONTACT ME</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <form id="contactForm" class="contact-form" novalidate>
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" type="text" class="form-control" required aria-required="true" />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" class="form-control" required aria-required="true" />
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="4" class="form-control" required aria-required="true"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="d-flex justify-content-between align-items-center">
+              <button type="submit" class="btn btn-outline-light">Send Message</button>
+              <small class="text-muted">I try to reply within 48 hours.</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         FOOTER (same text)
+         ======================================================= -->
+    <footer>
+      <p>&copy; 2025 Sean Andre Benedict L. Chacon. All rights reserved.</p>
+      <p>Aspiring Computer Engineer</p>
+    </footer>
+
+  </div> <!-- /page-container -->
+
+  <!-- =========================================================
+       SCRIPTS (Bootstrap + small helper)
+       ========================================================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // ---------------------------------------------------------
+    // Simple client-side form validation (same behavior)
+    // ---------------------------------------------------------
+    (function () {
+      const form = document.getElementById('contactForm');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name    = document.getElementById('name').value.trim();
+        const email   = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+          alert('Please fill out all fields before sending.');
+          return;
+        }
+
+        // Replace with your real submission logic or service
+        alert('Thanks, ' + name + '! Your message was (simulated) sent.');
+        form.reset();
+      });
+    })();
+
+    // ---------------------------------------------------------
+    // Helper: quickly change About image from the console
+    // Usage: changeAboutImage('https://yourdomain.com/yourphoto.jpg')
+    // ---------------------------------------------------------
+    function changeAboutImage(url) {
+      const img = document.getElementById('aboutImage');
+      if (img && url) img.src = url;
+    }
+  </script>
+</body>
+</html>
